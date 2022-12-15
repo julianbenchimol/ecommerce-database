@@ -32,8 +32,3 @@ module.exports = {
   Tag,
   ProductTag,
 };
-
-
-// ModelOne.belongsToMany(ModelTwo, 
-//   { through: ThroughModel, 
-//     foreignKey: "modelone_id" });
