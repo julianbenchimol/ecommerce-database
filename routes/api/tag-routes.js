@@ -59,7 +59,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  Tag.delete({
+  Tag.destroy({
     where: {
       id: req.params.id
     }
