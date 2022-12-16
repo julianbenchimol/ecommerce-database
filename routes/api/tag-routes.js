@@ -49,6 +49,12 @@ router.put('/:id', (req, res) => {
       }
     }
   )
+  .then((updatedTag)=>{
+    res.json(updatedTag)
+  })
+  .catch((err)=>{
+    res.json(err)
+  })
   // update a tag's name by its `id` value
 });
 
@@ -57,6 +63,12 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
+  })
+  .then((deletedTag)=>{
+    res.json(deletedTag)
+  })
+  .catch((err)=>{
+    res.json(err)
   })
 });
 
